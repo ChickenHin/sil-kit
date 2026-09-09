@@ -129,8 +129,8 @@ jobs:
   #   with:
   #     run_build: ${{ needs.check-run-builds.outputs.run_builds == 'true' }}
 
-  # windows-release-builds:
-  #   uses: ./.github/workflows/build-win.yml
+  windows-release-builds:
+    uses: ./.github/workflows/build-win.yml
   #   # needs: [check-licenses, check-run-builds, check-formatting, check-dco-signed]
   #   with:
   #     run_build: ${{ needs.check-run-builds.outputs.run_builds == 'true' }}
